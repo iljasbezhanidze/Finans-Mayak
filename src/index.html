@@ -17,15 +17,55 @@
     <div class="b-page__header">
       @include('partials/header.html')
     </div>
+
     <main class="b-main b-page__content">
       <section class="b-main__section">
-        sdf
+        <div class="b-main__container">
+          @include('partials/first-screen.html')
+        </div>
       </section>
+
+      <section class="b-main__section">
+        <div class="b-main__container">
+          @include('partials/services.html')
+        </div>
+      </section>
+      
+      <section class="b-main__section">
+        <div class="b-main__container">
+          @include('partials/stack.html')
+        </div>
+      </section>
+
+      <section class="b-main__section">
+        <div class="b-main__container">
+          @include('partials/about-us.html')
+        </div>
+      </section>
+
+      <section class="b-main__section">
+        <div class="b-main__container">
+          @include('partials/reviews.html')
+        </div>
+      </section>
+      
+      <section class="b-main__section">
+        <div class="b-main__container">
+          @include('partials/partners.html')
+        </div>
+      </section>
+      
+      <section class="b-main__section">
+        <div class="b-main__container">
+          @include('partials/contacts.html')
+        </div>
+      </section>
+      
     </main>
+
    <div class="b-page__footer">
      @include('partials/footer.html')
     </div>
-    
   </div>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

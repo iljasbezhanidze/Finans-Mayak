@@ -3,6 +3,15 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
+@import "global";
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/footer";
+@import "./components/first-screen";
+@import "./components/services";
+@import "./components/stack";
+@import "./components/about-us";
+@import "./components/reviews";
+@import "./components/partners";
+@import "./components/contacts";
