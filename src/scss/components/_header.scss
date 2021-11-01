@@ -1,4 +1,22 @@
 .b-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.b-short-contacts {
+    letter-spacing: 1%;
+    font-weight: 500;
+    opacity: .8;
+}
+
+.b-menu {
+    display: flex;
+    letter-spacing: 1%;
+    font-weight: 500;
+    opacity: .8;
+
+    &__item:not(:last-child){
+        margin-right: 40px;
+    }
 }
