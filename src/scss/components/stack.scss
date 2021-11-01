@@ -1,0 +1,83 @@
+.b-stack {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.b-stack__title {
+  text-align: center;
+  max-width: 610px;
+  margin-bottom: 120px;
+  margin-top: 180px;
+}
+
+.b-stack .b-stack__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 378px;
+  height: 48px;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    transition: font-size .5s;
+    cursor: pointer;
+    height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    &:first-child,
+    &:last-child {
+      font-size: 12px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(6) {
+      font-size: 14px;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+      font-size: 24px;
+    }
+  }
+
+  &-item:hover {
+    font-size: 36px;
+  }
+}
+
+
+.b-stack__card .b-title {
+  max-width: 570px;
+}
+
+.b-card__mark {
+  color: #111318;
+  margin-bottom: 60px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.b-card__button {
+  width: 287px;
+}
+
+.b-title.b-stack__title {}
+
+.b-stack__list-item {}
+
+.b-card__title {}
+
+.b-btn__arrow_light {}
