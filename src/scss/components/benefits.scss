@@ -1,0 +1,23 @@
+.b-benefits {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+        max-width: 300px;
+    }
+
+    &__list {
+        max-width: 1026px;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+    }
+}
+
+.b-benefits-card {
+
+    &__title {
+        margin-bottom: 40px;
+    }
+}
