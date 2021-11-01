@@ -15,7 +15,9 @@
 <body>
   <div class="b-page">
     <div class="b-page__header">
-      @include('partials/header.html')
+      <div class="b-page__container">
+        @include('partials/header.html')
+      </div>
     </div>
 
     <main class="b-main b-page__content">
@@ -64,7 +66,9 @@
     </main>
 
    <div class="b-page__footer">
-     @include('partials/footer.html')
+     <div class="b-page__container">
+       @include('partials/footer.html')
+      </div>
     </div>
   </div>
   <script src="js/vendor.js"></script>

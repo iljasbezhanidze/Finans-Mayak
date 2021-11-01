@@ -1,11 +1,11 @@
-// базовые подключения
+// basic
 @import "vars";
 @import "mixins";
 @import "fonts";
 @import "settings";
 @import "global";
 
-// подключения компонентов страницы
+// components page
 @import "./components/header";
 @import "./components/footer";
 @import "./components/first-screen";
@@ -15,3 +15,4 @@
 @import "./components/reviews";
 @import "./components/partners";
 @import "./components/contacts";
+

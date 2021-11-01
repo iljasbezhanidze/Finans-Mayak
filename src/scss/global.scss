@@ -1,7 +1,118 @@
 body {
-    background-color: #0E1012;
-    color: #D0D1D1;
-    font-family: 'Manrope', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
+  background-color: #0E1012;
+  color: #D0D1D1;
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #fff;
+}
+
+//POSITIONS AND SIZES
+.b-page {
+  &__header {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content {}
+
+  &__container {
+    max-width: 1585px;
+    flex-grow: 1;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 180px;
+    padding-bottom: 80px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.b-main {
+
+  &__section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 180px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  &__container {
+    max-width: 1585px;
+    flex-grow: 1;
+  }
+}
+
+//BUTTONS
+.b-btn {
+  font-weight: 600;
+  background-color: #FFEECC;
+  box-shadow: 0px 20px 40px 0px #FFEECC33;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  color: #fff;
+  transition: all .2s;
+
+  &_dark {
+    background: linear-gradient(90deg, #141618 0%, #181A1C 100%);
+    color: #fff;
+  }
+}
+
+//CARDS
+.b-card {
+  border-radius: 20px;
+  padding: 80px;
+  transition: all .2s;
+  color: #fff;
+
+  &:hover {
+    box-shadow: 0px 0px 160px 0px #FFEECC33;
+    color: #0F1113;
+  }
+
+  &_frames {
+    border: 4px solid #FFEECC;
+    padding: 60px;
+    background-color: #0F1113;
+  }
+}
+
+//TITLES
+.b-title {
+  font-size: 56px;
+  font: 700px;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.2;
+
+  &_medium {
+    font-size: 48px;
+  }
+
+  &_small {
+    font-size: 36px;
+  }
+
+  &_ultra-small {
+    font-size: 24px;
+  }
+
+  &_gray {
+    color: #717374;
+  }
+
+  &_black {
+    color: #111318;
+  }
 }
