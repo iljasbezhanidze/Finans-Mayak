@@ -14,60 +14,63 @@
 
 <body>
   <div class="b-page">
-    <div class="b-page__header">
-      <div class="b-page__container">
-        @include('partials/header.html')
+
+    <div class="b-page__main-window" style="background-image: url('img/background.png">
+      <div class="b-page__header">
+        <div class="b-page__container">
+          @include('partials/header.html')
+        </div>
       </div>
+
+      <main class="b-main b-page__content">
+        <section class="b-main__section b-main__section-background">
+          <div class="b-main__container">
+            @include('partials/first-screen.html')
+          </div>
+        </section>
     </div>
 
-    <main class="b-main b-page__content">
-      <section class="b-main__section">
-        <div class="b-main__container">
-          @include('partials/first-screen.html')
-        </div>
-      </section>
+    <section class="b-main__section">
+      <div class="b-main__container">
+        @include('partials/services.html')
+      </div>
+    </section>
 
-      <section class="b-main__section">
-        <div class="b-main__container">
-          @include('partials/services.html')
-        </div>
-      </section>
-      
-      <section class="b-main__section">
-        <div class="b-main__container">
-          @include('partials/stack.html')
-        </div>
-      </section>
+    <section class="b-main__section">
+      <div class="b-main__container">
+        @include('partials/stack.html')
+      </div>
+    </section>
 
-      <section class="b-main__section">
-        <div class="b-main__container">
-          @include('partials/about-us.html')
-        </div>
-      </section>
+    <section class="b-main__section">
+      <div class="b-main__container">
+        @include('partials/about-us.html')
+      </div>
+    </section>
 
-      <section class="b-main__section">
-        <div class="b-main__container">
-          @include('partials/reviews.html')
-        </div>
-      </section>
-      
-      <section class="b-main__section">
-        <div class="b-main__container">
-          @include('partials/partners.html')
-        </div>
-      </section>
-      
-      <section class="b-main__section">
-        <div class="b-main__container">
-          @include('partials/contacts.html')
-        </div>
-      </section>
-      
+    <section class="b-main__section">
+      <div class="b-main__container">
+        @include('partials/reviews.html')
+      </div>
+    </section>
+
+    <section class="b-main__section">
+      <div class="b-main__container">
+        @include('partials/partners.html')
+      </div>
+    </section>
+
+    <section class="b-main__section">
+      <div class="b-main__container">
+        @include('partials/contacts.html')
+      </div>
+    </section>
+
     </main>
 
-   <div class="b-page__footer">
-     <div class="b-page__container">
-       @include('partials/footer.html')
+    <div class="b-page__footer">
+      <div class="b-page__container">
+        @include('partials/footer.html')
       </div>
     </div>
   </div>

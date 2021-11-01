@@ -1,0 +1,16 @@
+.b-main-window {
+    height: 1400px;
+    max-width: 760px;
+
+    &__title-box {
+        margin-bottom: 60px;
+    }
+
+    &__description {
+        margin-bottom: 60px;
+    }
+
+    &__button {
+        max-width: 309px;
+    }
+}

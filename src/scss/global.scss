@@ -17,6 +17,12 @@ body {
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    margin-bottom: 80px;
+  }
+  &__main-window {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
   }
 
   &__content {}
@@ -60,9 +66,21 @@ body {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 30px;
-  color: #fff;
+  color: #0F1113;
   transition: all .2s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 10px 40px 20px #ffeecc33;
+  }
+
+  &__arrow {
+    width: 19px;
+    height: 10px;
+    object-fit: none;
+  }
 
   &_dark {
     background: linear-gradient(90deg, #141618 0%, #181A1C 100%);
@@ -111,7 +129,7 @@ body {
   }
 
   &_gray {
-    color: #717374;
+    color: #A1A8AD;
   }
 
   &_black {
