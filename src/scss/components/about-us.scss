@@ -1,0 +1,29 @@
+.b-about {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    max-width: 700px;
+    padding-right: 20px;
+
+    & p:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__cards-inner {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    max-width: 760px;
+  }
+
+  &__card-item {
+    min-width: 48.5%;
+    max-width: 370px;
+    margin-bottom: 20px;
+  }
+}
