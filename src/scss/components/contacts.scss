@@ -34,13 +34,16 @@
   background-color: #101214;
   border: none;
   border-bottom: 2px solid rgba(255, 255, 255, 0.199);
-  border-radius: 10px;
   outline: transparent;
   color: #fff;
   caret-color: #FFEECC;
+  font-weight: 400;
+  clip-path: inset(0 0 0 0 round 10px);
 
   &::placeholder {
+    color: #fff;
     opacity: .6;
+    font-weight: 400;
   }
 
   &:focus,
@@ -85,6 +88,10 @@
     font-size: 24px;
     font-weight: 600;
     display: block;
+}
+
+.b-form__input_textarea {
+    height: 180px;
 }
 
 .b-contacts-links__address {
@@ -199,4 +206,8 @@
   color: #FFEECC;
   opacity: 1;
   text-decoration: underline !important;
+
+  &:hover {
+      opacity: .7;
+  }
 }

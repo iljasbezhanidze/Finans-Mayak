@@ -26,5 +26,5 @@ function scrollTo(elem) {
 };
 
 document.querySelector('.b-scroll').addEventListener('click', () => {
-  scrollTo(document.querySelector('.b-contacts'))
+  scrollTo(document.querySelector('.b-main__section_light-background'))
 })

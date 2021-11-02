@@ -35,6 +35,7 @@
 .b-review-card__text {
   margin-bottom: 40px;
   user-select: none;
+  opacity: .8;
 }
 
 .b-person-data {
@@ -86,7 +87,7 @@
 
 .b-review-card__link-text {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   opacity: .6;
 
   &:hover {

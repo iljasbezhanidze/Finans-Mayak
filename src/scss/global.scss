@@ -1,11 +1,16 @@
 body {
-  background-color: #0E1012;
+  background-color: #0F1113;
   color: #D0D1D1;
   font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.6;
   color: #fff;
+  letter-spacing: 0.02em;
+}
+
+cite {
+  font-style: normal;
 }
 
 //POSITIONS AND SIZES
@@ -15,9 +20,8 @@ body {
     padding-right: 25px;
     display: flex;
     justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-bottom: 80px;
+    padding-top: 84px;
+    margin-bottom: 164px;
   }
 
   &__main-window {
@@ -34,7 +38,7 @@ body {
   &__content {}
 
   &__container {
-    max-width: 1585px;
+    max-width: 1560px;
     flex-grow: 1;
   }
 
@@ -79,7 +83,7 @@ body {
   }
 
   &__container {
-    max-width: 1585px;
+    max-width: 1560px;
     flex-grow: 1;
   }
 
@@ -97,27 +101,57 @@ body {
   align-items: center;
   padding: 30px;
   color: #0F1113;
-  transition: all .2s;
   cursor: pointer;
   transition: all .4s;
+  width: 100%;
 
   &:hover {
     box-shadow: 0px 10px 40px 20px #ffeecc33;
   }
 
   &:hover .b-btn__arrow {
-    transform: translateX(8px);
+    width: 25px;
   }
 
   &__arrow {
     width: 19px;
-    height: 10px;
-    object-fit: none;
+    height: 9px;
     transition: all .4s;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      background-color: #0F1113;
+      width: 100%;
+      height: 2px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 1px;
+      transform: rotateZ(-45deg);
+      background-color: #0F1113;
+      width: 9px;
+      height: 9px;
+      border-right: 2px solid #0F1113;
+      border-bottom: 2px solid #0F1113;
+      background-color: transparent;
+    }
 
     &_light {
-      width: 24px;
-      height: 24px;
+      &:before {
+        background-color: #fff;
+      }
+
+      &:after {
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+      }
     }
   }
 
@@ -162,8 +196,8 @@ body {
 //CARDS
 .b-card {
   border-radius: 20px;
-  padding: 80px;
-  transition: all .5s;
+  padding: 60px;
+  transition: all .7s linear, color .3s linear;
   color: #fff;
   background: linear-gradient(90deg, #141618 0%, #181A1C 100%);
 
@@ -189,6 +223,7 @@ body {
   &_frames {
     border: 4px solid #FFEECC;
     padding: 60px;
+    background: none;
     background-color: #0F1113;
     // pointer-events: none;
   }
@@ -198,9 +233,11 @@ body {
     box-shadow: 0px 0px 160px rgba(255, 238, 204, 0.2);
     text-align: center !important;
     border-radius: 10px;
+    padding: 80px;
   }
 
   .b-card__description {
     font-size: 18px;
+    opacity: .8;
   }
 }
