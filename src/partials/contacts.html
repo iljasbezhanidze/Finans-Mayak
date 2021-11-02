@@ -1,0 +1,87 @@
+<div class="b-contacts">
+  <div class="b-contacts__left-col">
+    <h3 class="b-title b-contacts__title">Контакты</h3>
+    <div class="b-contacts-links b-contacts__data">
+      <a class="b-contacts-links__tell" href="tel:+70980987623">+7 098 098 76 23</a>
+      <a class="b-contacts-links__email" href="mailto:sayhi@mayakfinance.com">sayhi@mayakfinance.com</a>
+      <address class="b-contacts-links__address">
+        <p>ул. Климашкина, 16</p>
+        <p>ЦАО Пресненский район</p>
+      </address>
+    </div>
+      <div class="b-socials b-contacts__socials">
+        <a class="b-socials__link" href="#">
+          <img class="b-socials__icon" src="./img/social1.svg" alt="ссылка на инстаграм"></a>
+        <a class="b-socials__link" href="#">
+          <img  class="b-socials__icon"src="./img/social2.svg" alt="ссылка на твиттер"></a>
+        <a class="b-socials__link" href="#">
+          <img class="b-socials__icon" src="./img/social3.svg" alt="ссылка на фэйсбук">
+        </a>
+      </div>
+  </div>
+
+ <form action="" class="b-form  b-contacts__right-col" name="Form question" autocomplete="off">
+  <!--input name-->
+    <input class="b-input b-form__input b-form__input_name"
+     placeholder="Имя" 
+     name="Name"
+     type="text" 
+     required
+     aria-label="поле ввода имени"
+     aria-required="true">
+
+ <!--input phone-->
+   <input class="b-input b-form__input b-form__input_tell"
+    pattern="^+38\d{3}-\d{3}-\d{2}-\d{2}$"
+    placeholder="Номер телефона *"
+    name="Tell"
+    type="tel"
+    required
+    aria-label="поле ввода номера телефона"
+    aria-required="true">
+    
+  <!--input email-->
+    <input class="b-input b-form__input b-form__input_email"
+    placeholder="Почта"
+    name="Email"
+    type='email'
+    pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
+    aria-label="поле ввода почты">
+  
+  <!-- compan name -->
+    <input class="b-input b-form__input b-form__input_tell"
+    name="Company Name"
+    placeholder="Название компании"
+    type="text"
+    aria-label="Название компании">
+
+  <!-- message -->
+    <textarea class="b-input b-form__input b-form__input_textarea"
+     name="Message"
+     placeholder="Сообщение..."
+     ></textarea>
+
+  <!--submit form-->
+    <div class="b-submit b-form__submit-wrapper">
+      <div class="b-submit__chackbox-wrapper">
+        <input class="b-submit__checkbox"
+        id="checkbox"
+        type="checkbox"
+        name="agreement"
+        required
+        aria-required="true"
+        aria-label="Пользовтельское соглашение"
+        > 
+        <label class="b-submit__label" for="checkbox">
+          <span class="b-submit__checkbox-text">Даю согласие на обработку</span>
+          <a class="b-submit__label-link" href="#">перосональных данных</a>
+        </label>
+      </div>
+      <button class="b-btn b-submit__button" type="submit">
+         Отправить
+        <img class="b-btn__arrow" src="./img/arrow-btn.svg" alt="кнопка">
+      </button>
+    </div>
+
+  </form>
+</div>

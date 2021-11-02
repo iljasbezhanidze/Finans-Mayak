@@ -41,10 +41,11 @@ body {
   &__footer {
     display: flex;
     justify-content: center;
-    padding-top: 180px;
+    padding-top: 120px;
     padding-bottom: 80px;
     padding-left: 25px;
     padding-right: 25px;
+    background: linear-gradient(90deg, #141618 0%, #181A1C 100%)
   }
 }
 
@@ -56,12 +57,33 @@ body {
     margin-bottom: 180px;
     padding-left: 25px;
     padding-right: 25px;
+
+    &_light-background {
+      background: linear-gradient(90deg, #141618 0%, #181A1C 100%);
+      padding-bottom: 120px;
+      padding-top: 180px;
+      margin-bottom: 0;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 1585px;
+        height: 2px;
+        background-color: #101214;
+        transform: translateX(-50%);
+        bottom: 0;
+      }
+    }
   }
 
   &__container {
     max-width: 1585px;
     flex-grow: 1;
   }
+
+
 }
 
 //BUTTONS
@@ -69,7 +91,7 @@ body {
   font-weight: 600;
   background-color: #FFEECC;
   box-shadow: 0px 20px 40px 0px #FFEECC33;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,24 +99,25 @@ body {
   color: #0F1113;
   transition: all .2s;
   cursor: pointer;
+  transition: all .4s;
 
   &:hover {
     box-shadow: 0px 10px 40px 20px #ffeecc33;
   }
 
-  &:hover &__arrow_light {
+  &:hover .b-btn__arrow {
     transform: translateX(8px);
-  } 
+  }
 
   &__arrow {
     width: 19px;
     height: 10px;
     object-fit: none;
+    transition: all .4s;
 
     &_light {
       width: 24px;
       height: 24px;
-      transition: all .4s;
     }
   }
 
@@ -143,7 +166,6 @@ body {
   transition: all .5s;
   color: #fff;
   background: linear-gradient(90deg, #141618 0%, #181A1C 100%);
-  cursor: pointer;
 
   &__title {
     margin-bottom: 40px;
@@ -175,9 +197,10 @@ body {
     background: #FFEECC;
     box-shadow: 0px 0px 160px rgba(255, 238, 204, 0.2);
     text-align: center !important;
+    border-radius: 10px;
   }
 
-  .b-card__description{
+  .b-card__description {
     font-size: 18px;
   }
 }
