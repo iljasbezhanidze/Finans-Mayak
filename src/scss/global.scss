@@ -22,6 +22,11 @@ cite {
     justify-content: center;
     padding-top: 84px;
     margin-bottom: 164px;
+
+    &_none-intend {
+      margin-bottom: 0;
+      padding-top: 0;
+    }
   }
 
   &__main-window {
@@ -40,6 +45,7 @@ cite {
   &__container {
     max-width: 1560px;
     flex-grow: 1;
+    position: relative;
   }
 
   &__footer {

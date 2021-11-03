@@ -23,14 +23,13 @@
     margin-right: 40px;
   }
 
-  .logo {
-    max-width: 240px;
-    max-height: 120px;
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+}
+.b-logo.b-header__logo {
+  max-width: 240px;
+  max-height: 120px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .b-menu {

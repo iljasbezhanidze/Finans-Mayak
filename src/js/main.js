@@ -11,47 +11,46 @@ var swiper = new Swiper(".mySwiper", {
 
 
 //anchor smooth scroll
-function scrollTo(elem, correction = 0) {
-  window.scroll({
-    left: 0,
-    top: elem.offsetTop - correction,
-    behavior: 'smooth'
-  });
-};
+document.addEventListener("DOMContentLoaded", () => {
+  
+  function scrollTo(elem, correction = 0) {
+    window.scroll({
+      left: 0,
+      top: elem.offsetTop - correction,
+      behavior: 'smooth'
+    });
+  };
 
-const scrollBtnServices = document.querySelector('.b-menu__link_scroll-services'),
-      scrollbtnPrices = document.querySelector('.b-menu__link_scroll-prices'),
-      scrollBtnCompany = document.querySelector('.b-menu__link_scroll_about-company')
-      
-scrollBtnServices.addEventListener('click', () => {
-  scrollTo(document.querySelector('.b-services'), 50)
-})
+  const scrollBtnServices = document.querySelector('.b-menu__link_scroll-services'),
+    scrollbtnPrices = document.querySelector('.b-menu__link_scroll-prices'),
+    scrollBtnCompany = document.querySelector('.b-menu__link_scroll_about-company')
 
-scrollbtnPrices.addEventListener('click', () => {
-  scrollTo(document.querySelector('.b-stack__card'), 100)
-})
+  scrollBtnServices.addEventListener('click', () => {
+    scrollTo(document.querySelector('.b-services'), 50)
+  })
 
-scrollBtnCompany.addEventListener('click', () => {
-  scrollTo(document.querySelector('.b-benefits'), 50)
-})
+  scrollbtnPrices.addEventListener('click', () => {
+    scrollTo(document.querySelector('.b-stack__card'), 100)
+  })
 
+  scrollBtnCompany.addEventListener('click', () => {
+    scrollTo(document.querySelector('.b-benefits'), 50)
+  })
+});
 
 
 //animate icon for succes submit
 var animPhaseOne = 2000;
 var animPhaseTwo = animPhaseOne + 750;
 
-setTimeout(function() {
+setTimeout(function () {
   document.getElementById('js-spinner').classList.add('--spinner-complete');
 }, animPhaseOne);
 
-setTimeout(function() {
+setTimeout(function () {
   document.getElementById('js-success-tick').classList.add('--tick-complete');
 }, animPhaseOne);
 
-setTimeout(function() {
+setTimeout(function () {
   document.getElementById('js-success-ring').classList.add('--ring-complete');
 }, animPhaseOne);
-
-
-

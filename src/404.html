@@ -17,25 +17,24 @@
   @include('partials/modal.html')
   @include('partials/modal-succes.html')
   <main class="b-page">
-    <div class="b-page__main-window" style="background-image: url('img/background.png')">
-      <div class="b-page__header">
-        <div class="b-page__container">
-          @include('partials/header.html')
-        </div>
-      </div>
-
-      <main class="b-main b-page__content">
-        <div class="b-error" style="">
-
-        </div>
-      </main>
-
-      <div class="b-page__footer">
-        <div class="b-page__container">
-          @include('partials/footer.html')
-        </div>
+    <div class="b-page__header b-page__header_none-intend">
+      <div class="b-page__container">
+        @include('partials/header-404.html')
       </div>
     </div>
+
+    <main class="b-main b-page__content">
+      <div class="b-error" style="background-image: url(img/404-bcg.jpg);">
+       <div class="b-error__title">
+            <div class="b-title b-title_gray">
+              К сожалению
+            </в>
+            <div class="b-title">
+              страница не найдена
+            </div>
+          </div>
+       </div>
+    </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
