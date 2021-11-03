@@ -29,7 +29,7 @@
 
 .b-contacts-links {}
 
-.b-form__input {
+.b-input {
   padding: 30px;
   background-color: #101214;
   border: none;
@@ -57,7 +57,7 @@
   }
 }
 
-.b-form__input:not(.b-form__input_textarea) {
+.b-input:not(.b-form__input_textarea) {
   width: 49%;
   margin-bottom: 20px;
 }

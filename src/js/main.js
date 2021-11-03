@@ -1,3 +1,4 @@
+// slider
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 20,
@@ -7,6 +8,9 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+
+
+//anchor smooth scroll
 function scrollTo(elem, correction = 0) {
   window.scroll({
     left: 0,
@@ -15,15 +19,10 @@ function scrollTo(elem, correction = 0) {
   });
 };
 
-const scrollBtnForm = document.querySelector('.b-btn__scroll'),
-      scrollBtnServices = document.querySelector('.b-menu__link_scroll-services'),
+const scrollBtnServices = document.querySelector('.b-menu__link_scroll-services'),
       scrollbtnPrices = document.querySelector('.b-menu__link_scroll-prices'),
       scrollBtnCompany = document.querySelector('.b-menu__link_scroll_about-company')
-
-scrollBtnForm.addEventListener('click', () => {
-  scrollTo(document.querySelector('.b-main__section_light-background'))
-})
-
+      
 scrollBtnServices.addEventListener('click', () => {
   scrollTo(document.querySelector('.b-services'), 50)
 })
@@ -35,3 +34,24 @@ scrollbtnPrices.addEventListener('click', () => {
 scrollBtnCompany.addEventListener('click', () => {
   scrollTo(document.querySelector('.b-benefits'), 50)
 })
+
+
+
+//animate icon for succes submit
+var animPhaseOne = 2000;
+var animPhaseTwo = animPhaseOne + 750;
+
+setTimeout(function() {
+  document.getElementById('js-spinner').classList.add('--spinner-complete');
+}, animPhaseOne);
+
+setTimeout(function() {
+  document.getElementById('js-success-tick').classList.add('--tick-complete');
+}, animPhaseOne);
+
+setTimeout(function() {
+  document.getElementById('js-success-ring').classList.add('--ring-complete');
+}, animPhaseOne);
+
+
+

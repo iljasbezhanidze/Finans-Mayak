@@ -1,0 +1,52 @@
+<div class="b-modal b-modal_call-back" data-modal="modal1">
+    <div class="b-modal__wrapper" style="background-image: url(img/pulse-background-empty.jpg);">
+        <div class="b-modal__head">
+            <div class="b-modal__title">Заказать звонок</div>
+            <button class="b-modal__close" type="button">
+                <span class="b-modal__close-line"></span>
+                <span class="b-modal__close-line"></span>
+            </button>
+        </div>
+        <div class="b-modal__body">
+            <form class="b-form" autocomplete="off">
+                <input class="b-input b-modal__input b-modal__input_name"
+                placeholder="Имя" 
+                name="Name"
+                type="text" 
+                required
+                aria-label="поле ввода имени"
+                aria-required="true">
+    
+                <input class="b-input b-modal__input b-modal__input_tell"
+                pattern="^+38\d{3}-\d{3}-\d{2}-\d{2}$"
+                placeholder="Номер телефона *"
+                name="Tell"
+                type="tel"
+                required
+                aria-label="поле ввода номера телефона"
+                aria-required="true">
+    
+               <div class="b-submit b-modal__submit-wrapper">
+                  <div class="b-submit__chackbox-wrapper">
+                    <input class="b-submit__checkbox"
+                    id="checkbox"
+                    type="checkbox"
+                    name="agreement"
+                    required
+                    aria-required="true"
+                    aria-label="Пользовтельское соглашение"
+                    > 
+                    <label class="b-submit__label" for="checkbox">
+                      <span class="b-submit__checkbox-text">Даю согласие на обработку</span>
+                      <a class="b-submit__label-link" href="#">перосональных данных</a>
+                    </label>
+                  </div>
+               </div>
+               <button class="b-btn b-modal__button" type="submit">
+                 Отправить
+                 <span class="b-btn__arrow"></span>
+               </button>
+            </form>
+        </div>
+    </div>
+</div>

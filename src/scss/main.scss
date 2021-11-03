@@ -16,4 +16,14 @@
 @import "./components/partners";
 @import "./components/contacts";
 @import "./components/benefits";
+@import "./components/modal";
+@import "./components/modal-succes";
+@import "./components/404";
+
+.b-modal_call-back {
+    display: none;
+}
+.b-modal_call-back-succes {
+    display: none;
+}
 

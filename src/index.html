@@ -8,16 +8,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>New site</title>
-  <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <div class="b-page">
-
+  @include('partials/modal.html')
+  @include('partials/modal-succes.html')
+  <main class="b-page">
     <div class="b-page__main-window" style="background-image: url('img/background.png')">
       <div class="b-page__header">
         <div class="b-page__container">
@@ -76,14 +75,13 @@
         @include('partials/contacts.html')
       </div>
     </section>
+  </main>
 
-    </main>
-
-    <div class="b-page__footer">
-      <div class="b-page__container">
-        @include('partials/footer.html')
-      </div>
+  <div class="b-page__footer">
+    <div class="b-page__container">
+      @include('partials/footer.html')
     </div>
+  </div>
   </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/vendor.js"></script>
