@@ -29,6 +29,10 @@ cite {
     }
   }
 
+  &_main {
+    overflow-x: hidden;
+  }
+
   &__main-window {
     -webkit-aspect-ratio: 19/14;
     aspect-ratio: 19/14;
@@ -86,6 +90,11 @@ cite {
         bottom: 0;
       }
     }
+
+  }
+  &__background {
+    background-position: top center;
+    background-repeat: no-repeat;
   }
 
   &__container {

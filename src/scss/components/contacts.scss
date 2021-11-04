@@ -10,6 +10,7 @@
   height: 100%;
   max-width: 494px;
   flex-grow: 1;
+  margin-right: 20px;
 }
 
 .b-contacts__right-col {
@@ -58,7 +59,7 @@
 }
 
 .b-input:not(.b-form__input_textarea) {
-  width: 49%;
+  min-width: 49%;
   margin-bottom: 20px;
 }
 

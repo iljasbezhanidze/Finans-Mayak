@@ -20,11 +20,41 @@
 @import "./components/modal-succes";
 @import "./components/404";
 @import "./components/header-404";
+@import "./components/calculator";
+@import "media";
 
 .b-modal_call-back {
     display: none;
 }
 .b-modal_call-back-succes {
+    display: none;
+}
+.b-calculator_modal-1 {
+    // display: none;
+}
+.b-calculator_modal-2 {
+    // display: none;
+}
+.b-calculator_modal-3 {
+    // display: none;
+}
+.b-calculator_modal-4 {
+    // display: none;
+}
+.b-calculator_modal-5 {
+    // display: none;
+}
+.b-calculator_modal-6 {
+    // display: none;
+}
+.b-calculator_modal-7 {
+    // display: none;
+}
+.b-calculator_modal-8 {
+    // display: none;
+}
+
+.b-reviews {
     display: none;
 }
 

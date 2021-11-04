@@ -3,6 +3,7 @@
     justify-content: space-between;
 
     &__title {
+        flex-shrink: 0;
         max-width: 300px;
     }
 

@@ -27,7 +27,7 @@
   }
 
   &__card-item {
-    min-width: 48.5%;
+    flex-grow: 1;
     max-width: 370px;
     margin-bottom: 20px;
   }

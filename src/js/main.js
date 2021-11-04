@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiper", {
 
 //anchor smooth scroll
 document.addEventListener("DOMContentLoaded", () => {
-  
+
   function scrollTo(elem, correction = 0) {
     window.scroll({
       left: 0,
