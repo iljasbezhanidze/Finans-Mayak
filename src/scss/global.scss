@@ -13,6 +13,10 @@ cite {
   font-style: normal;
 }
 
+.b-only-mob {
+  display: none;
+}
+
 //POSITIONS AND SIZES
 .b-page {
   &__header {
@@ -72,6 +76,11 @@ cite {
     padding-left: 25px;
     padding-right: 25px;
 
+    &_background {
+      background-repeat: no-repeat;
+      background-position: center 5%;
+    }
+
     &_light-background {
       background: linear-gradient(90deg, #141618 0%, #181A1C 100%);
       padding-bottom: 120px;
@@ -93,16 +102,15 @@ cite {
 
   }
   &__background {
-    background-position: top center;
+    background-position: 50% 5%;
     background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &__container {
     max-width: 1560px;
     flex-grow: 1;
   }
-
-
 }
 
 //BUTTONS
@@ -206,6 +214,7 @@ cite {
     color: #111318;
   }
 }
+
 
 
 //CARDS

@@ -1,7 +1,12 @@
 // slider
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 20,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    }
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

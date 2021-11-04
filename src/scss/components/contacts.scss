@@ -157,6 +157,7 @@
   align-items: center;
   cursor: pointer;
   user-select: none;
+  white-space: nowrap;
 }
 
 .b-submit__label::before {
