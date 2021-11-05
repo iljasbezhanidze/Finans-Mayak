@@ -25,11 +25,10 @@
         </div>
       </div> -->
 
-      <main class="b-main b-page__content"s
-        <section class="b-main__section">
-          <div class="b-main__container">
-            @include('partials/first-screen.html')
-          </div>
+      <main class="b-main b-page__content" s <section class="b-main__section">
+        <div class="b-main__container">
+          @include('partials/first-screen.html')
+        </div>
         </section>
     </div>
 
@@ -46,13 +45,13 @@
     </section>
 
     <section class="b-main__section b-main__section_background">
+      <!-- backgrounds this setion -->
       <style>
-        @media(min-width:940px){
-          .b-main__section_background{background-image: url("img/pulse-background.jpg");}
+        :root {
+          --background-pc: url("../img/pulse-background.jpg");
+          --background-mob: url("../img/pulse-background-mob.jpg");
         }
-        @media(max-width:940px){
-          .b-main__section_background{background-image: url("img/pulse-background-mob.jpg");}
-        }
+
       </style>
       <div class="b-main__container">
         @include('partials/stack.html')
