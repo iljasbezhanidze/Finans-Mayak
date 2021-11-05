@@ -43,17 +43,17 @@
 
     @media(max-width:498px) {
       & {
-        bottom: 37%;
+        bottom: 40%;
       }
     }
     @media(max-width:460px) {
       & {
-        bottom: 31%;
+        bottom: 39%;
       }
     }
-    @media(max-width:460px) {
+    @media(max-width:420px) {
       & {
-        bottom: 36%;
+        bottom: 43%;
       }
     }
   }
@@ -418,6 +418,7 @@
 }
 
 @media(max-width:660px) {
+  
 
   .b-card__mark {
     margin-bottom: 40px;
@@ -467,6 +468,8 @@
 
   .b-card_frames {
     border-width: 2px;
+
+    
   }
 }
 
@@ -520,9 +523,11 @@
 }
 
 @media(max-width:498px){
-  .b-stack__card {
+  .b-card.b-stack__card {
     width: 100vw;
     border-radius: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .b-stack__title {
@@ -532,6 +537,43 @@
 }
 
 @media(max-width:460px) {
+
+  
+.b-about__cards-inner {
+  border: 2px solid #FFEECC;
+  border-radius: 5px;
+  padding: 20px;
+}
+.b-card.b-about__card-item {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    display: flex;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #ffffff2d;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .b-about__card-item .b-title {
+    margin-bottom: 0;
+  }
+
+  .b-about__card-item .b-title {
+    white-space: nowrap;
+    flex: 1 0 80px;
+    margin-right: 20px;
+    text-align: start;
+  }
+
+  .b-card .b-card__description {
+    font-size: 14px;
+  }
 
   .b-page__main-window {
     background-position: 82%;
@@ -597,9 +639,17 @@
   .b-main-window__title-box {
     margin-bottom: 40px;
   }
+
+  .b-card__button {
+    max-width: 200px;
+  }
 }
 
 @media(max-width:420px) {
+
+  .b-card__button {
+    max-width: 182px;
+  }
   .b-stack .b-stack__list-item {
     font-size: 14px !important;
   }
@@ -660,6 +710,7 @@
 
   .b-review-card__text {
     margin-bottom: 20px;
+    font-size: 15px;
   }
 
   .b-person-data__name {
@@ -701,4 +752,5 @@
   .swiper {
     margin-top: 20px;
   }
+
 }
