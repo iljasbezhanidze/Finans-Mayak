@@ -1,8 +1,56 @@
-// .b-calculator {
-//     position: fixed;
-//     left: 0;
-//     top: 0;
-//     width: 100%;
-//     height: 100%;
-//     z-index: 100;
-// }
+.b-calculator {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  padding: 180px;
+
+  &__head {
+      display: inline-block;
+  }
+
+  &__body {
+      display: inline-flex;
+  }
+
+  &__title {
+    opacity: .8;
+    margin-bottom: 40px;
+  }
+
+  &__question {
+      font-size: 36px;
+      font-weight: 700;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__close-btn {
+    margin-right: 20px;
+    height: 60px;
+    quotes: 60px;
+  }
+
+  &__btn-next {
+    flex: 1 1 269px;
+    height: 92px;
+  }
+}
+
+.b-close-btn {
+    
+    &__title {
+        
+    }
+}

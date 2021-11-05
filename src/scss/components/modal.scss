@@ -37,8 +37,9 @@
     margin-bottom: 80px;
     margin-top: 40px;
   }
+}
 
-  &__close {
+.b-close-btn {
     width: 60px;
     height: 60px;
     border: 2px solid #FFEECC;
@@ -46,7 +47,7 @@
     background-color: transparent;
     position: relative;
 
-    &-line {
+    &__line {
       position: absolute;
       left: 26%;
       top: 48%;
@@ -54,7 +55,7 @@
       width: 27px;
       background-color: #fff;
 
-      .b-modal__close:hover & {
+      .b-close-btn:hover & {
         background-color: #FFEECC;
       }
 
@@ -67,7 +68,7 @@
       }
     }
   }
-}
+
 
 .b-input.b-modal__input {
   width: 100%;

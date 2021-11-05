@@ -16,7 +16,7 @@
 <body>
   @include('partials/modal.html')
   @include('partials/modal-succes.html')
-  <!-- @include('partials/calculator/calculator-page-1.html') -->
+  @include('partials/calculator/calculator-page-1.html')
   <main class="b-page b-page_main">
     <div class="b-page__main-window" style="background-image: url('img/background.png')">
       <!-- <div class="b-page__header">
@@ -25,7 +25,7 @@
         </div>
       </div> -->
 
-      <main class="b-main b-page__content">
+      <main class="b-main b-page__content"s
         <section class="b-main__section">
           <div class="b-main__container">
             @include('partials/first-screen.html')
@@ -45,8 +45,15 @@
       </div>
     </section>
 
-    <section class="b-main__section b-main__section_background"
-      style="background-image: url(./img/pulse-background.jpg);">
+    <section class="b-main__section b-main__section_background">
+      <style>
+        @media(min-width:940px){
+          .b-main__section_background{background-image: url("img/pulse-background.jpg");}
+        }
+        @media(max-width:940px){
+          .b-main__section_background{background-image: url("img/pulse-background-mob.jpg");}
+        }
+      </style>
       <div class="b-main__container">
         @include('partials/stack.html')
       </div>
