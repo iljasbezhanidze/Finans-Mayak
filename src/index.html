@@ -18,12 +18,19 @@
   @include('partials/modal-succes.html')
   @include('partials/calculator/calculator-page-1.html')
   <main class="b-page b-page_main">
-    <div class="b-page__main-window" style="background-image: url('img/background.png')">
-      <!-- <div class="b-page__header">
+    <div class="b-page__main-window">
+      <!-- backgrounds first screen -->
+      <style>
+        @media(min-width:1120px){
+            .b-page__main-window {background-image: url('img/background.jpg')}}
+        @media(max-width:1120px){
+            .b-page__main-window {background-image: url('img/background-mob.jpg')}}
+      </style>
+      <div class="b-page__header">
         <div class="b-page__container">
           @include('partials/header.html')
         </div>
-      </div> -->
+      </div>
 
       <main class="b-main b-page__content">
         <section class="b-main__section">
@@ -46,7 +53,7 @@
     </section>
 
     <section class="b-main__section b-main__section_background">
-      <!-- backgrounds this setion -->
+      <!-- backgrounds this section -->
       <style>
         :root {
           --background-pc: url("../img/pulse-background.jpg");

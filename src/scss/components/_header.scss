@@ -26,7 +26,7 @@
 }
 
 .b-logo.b-header__logo {
-  max-width: 240px;
+  max-width: calc(14vw + (100vw / 50));
   max-height: 120px;
   position: absolute;
   left: 50%;

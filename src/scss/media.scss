@@ -59,6 +59,32 @@
   }
 }
 
+@media(max-width:1500px){
+  .b-logo.b-header__logo {
+    transform: translateX(-25%);
+  }
+}
+@media(max-width:1300px){
+  .b-logo.b-header__logo {
+    transform: translateX(-17%);
+  }
+}
+@media(max-width:1150px){
+  .b-logo.b-header__logo {
+    max-width: 184px;
+  }
+
+  .b-menu__link,
+  .b-short-contacts__item {
+    font-size: 18px;
+  }
+  .b-menu__item:not(:last-child),
+  .b-short-contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+
 
 @media(max-width:1380px) {
   .b-input:not(.b-form__input_textarea) {
@@ -104,6 +130,13 @@
 }
 
 @media(max-width:1120px) {
+
+  
+  .b-page__main-window {
+    aspect-ratio: unset;
+    min-height: 1300px;
+    background-position: bottom;
+  }
 
   .b-services__list {
     justify-content: center;
@@ -193,6 +226,14 @@
   .b-stack .b-stack__list {
     margin-bottom: 180px;
   }
+  .b-short-contacts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .b-logo.b-header__logo {
+    transform: translateX(-55%);
+  }
 }
 
 
@@ -270,9 +311,9 @@
   .b-page__main-window {
     aspect-ratio: unset;
     width: 100%;
-    background-position: right;
+    // background-position: center;
     background-size: cover;
-    min-height: 700px;
+    // max-width: 1000px;
   }
 
   .b-title {
@@ -314,15 +355,14 @@
     flex: 1 0 100%;
   }
 
-  .b-page__main-window {
-    min-height: 1000px;
-  }
 }
 
 @media(max-width:860px) {
-  .b-page__main-window {
-    min-height: 850px;
+  .b-menu__item:not(:last-child), .b-short-contacts__item:not(:last-child) {
+    margin-right: 20px;
   }
+
+
 
   .b-modal__wrapper {
     width: 100%;
@@ -350,6 +390,10 @@
   .b-stack .b-stack__list {
     margin-bottom: 160px;
   }
+}
+
+@media(max-width:826px){
+    
 }
 
 @media(max-width:768px) {
@@ -468,8 +512,12 @@
 
   .b-card_frames {
     border-width: 2px;
+  }
+}
 
-    
+@media(max-width:600px){
+  .b-page__main-window {
+    min-height: 1148px;
   }
 }
 
@@ -550,6 +598,7 @@
     padding-right: 0;
     border-radius: 0;
     display: flex;
+    align-items: flex-start;
 
     &:not(:last-child) {
       border-bottom: 1px solid #ffffff2d;
@@ -566,17 +615,18 @@
 
   .b-about__card-item .b-title {
     white-space: nowrap;
-    flex: 1 0 80px;
+    flex: 0 0 80px;
     margin-right: 20px;
     text-align: start;
   }
 
   .b-card .b-card__description {
     font-size: 14px;
+    flex-grow: 2;
   }
 
   .b-page__main-window {
-    background-position: 82%;
+    min-height: 1000px;
   }
 
   .b-main-window__button {
@@ -646,6 +696,9 @@
 }
 
 @media(max-width:420px) {
+  .b-page__main-window {
+    min-height: 900px;
+  }
 
   .b-card__button {
     max-width: 182px;
