@@ -177,10 +177,6 @@
     align-items: flex-start;
   }
 
-  .b-submit__button {
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .b-submit__label {
     margin-bottom: 55px;
@@ -572,6 +568,15 @@
   .b-main-window__button {
     max-width: 250px;
   }
+
+  .b-submit__button {
+    max-width: 184px;
+    height: 66px;
+  }
+
+  .b-input {
+    padding: 25px;
+  }
 }
 
 @media(max-width:498px) {
@@ -791,7 +796,6 @@
   }
 
   .b-title {
-    text-align: center;
     font-size: 24px;
 
     &_small {
@@ -859,7 +863,7 @@
     opacity: 0;
     display: flex;
     transform: translateX(100%);
-    transition: all .4s ;
+    transition: all .4s;
   }
 
   .b-header__mob-head {
