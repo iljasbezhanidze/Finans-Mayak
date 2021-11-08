@@ -46,11 +46,13 @@
         bottom: 40%;
       }
     }
+
     @media(max-width:460px) {
       & {
         bottom: 39%;
       }
     }
+
     @media(max-width:420px) {
       & {
         bottom: 43%;
@@ -59,17 +61,19 @@
   }
 }
 
-@media(max-width:1500px){
+@media(max-width:1500px) {
   .b-logo.b-header__logo {
     transform: translateX(-25%);
   }
 }
-@media(max-width:1300px){
+
+@media(max-width:1300px) {
   .b-logo.b-header__logo {
     transform: translateX(-17%);
   }
 }
-@media(max-width:1150px){
+
+@media(max-width:1150px) {
   .b-logo.b-header__logo {
     max-width: 184px;
   }
@@ -78,6 +82,7 @@
   .b-short-contacts__item {
     font-size: 18px;
   }
+
   .b-menu__item:not(:last-child),
   .b-short-contacts__item:not(:last-child) {
     margin-right: 30px;
@@ -131,7 +136,7 @@
 
 @media(max-width:1120px) {
 
-  
+
   .b-page__main-window {
     aspect-ratio: unset;
     min-height: 1300px;
@@ -226,6 +231,7 @@
   .b-stack .b-stack__list {
     margin-bottom: 180px;
   }
+
   .b-short-contacts {
     flex-direction: column;
     align-items: flex-start;
@@ -358,11 +364,11 @@
 }
 
 @media(max-width:860px) {
-  .b-menu__item:not(:last-child), .b-short-contacts__item:not(:last-child) {
+
+  .b-menu__item:not(:last-child),
+  .b-short-contacts__item:not(:last-child) {
     margin-right: 20px;
   }
-
-
 
   .b-modal__wrapper {
     width: 100%;
@@ -392,9 +398,7 @@
   }
 }
 
-@media(max-width:826px){
-    
-}
+@media(max-width:826px) {}
 
 @media(max-width:768px) {
 
@@ -462,7 +466,7 @@
 }
 
 @media(max-width:660px) {
-  
+
 
   .b-card__mark {
     margin-bottom: 40px;
@@ -515,7 +519,7 @@
   }
 }
 
-@media(max-width:600px){
+@media(max-width:600px) {
   .b-page__main-window {
     min-height: 1148px;
   }
@@ -570,7 +574,7 @@
   }
 }
 
-@media(max-width:498px){
+@media(max-width:498px) {
   .b-card.b-stack__card {
     width: 100vw;
     border-radius: 0;
@@ -586,13 +590,14 @@
 
 @media(max-width:460px) {
 
-  
-.b-about__cards-inner {
-  border: 2px solid #FFEECC;
-  border-radius: 5px;
-  padding: 20px;
-}
-.b-card.b-about__card-item {
+
+  .b-about__cards-inner {
+    border: 2px solid #FFEECC;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .b-card.b-about__card-item {
     border: none;
     padding-left: 0;
     padding-right: 0;
@@ -703,6 +708,7 @@
   .b-card__button {
     max-width: 182px;
   }
+
   .b-stack .b-stack__list-item {
     font-size: 14px !important;
   }
@@ -805,5 +811,204 @@
   .swiper {
     margin-top: 20px;
   }
-
 }
+
+
+//mobile menu start-------------------------------------------------------------
+@media(max-width:860px) {
+
+  .b-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .b-logo.b-header__logo {
+    max-width: 124px;
+  }
+
+  .b-page__header {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .b-header__wrapper-mob {
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  .b-header__wrapper-desc {
+    display: none;
+  }
+
+  .b-header__inner-mob {
+    align-items: center;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    padding: 125px 20px 20px;
+    opacity: 0;
+    display: flex;
+    transform: translateX(100%);
+    transition: all .4s ;
+  }
+
+  .b-header__mob-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .b-header__inner-mob.b-show {
+    z-index: 100;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .b-menu {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+
+    &__link {
+      padding: 20px;
+      width: 100%;
+      border-bottom: 1px solid #0F1113;
+      background: linear-gradient(90deg, #141618 0%, #181A1C 100%);
+      flex: 2 0 100%;
+      font-size: 12px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .b-btn__menu-mob {
+    margin-top: auto;
+  }
+
+  .b-short-contacts,
+  .b-short-contacts__item,
+  .b-menu__item,
+  .b-header__menu {
+    width: 100%;
+  }
+
+  .b-header__menu {
+    margin-bottom: 10px;
+  }
+
+  .b-short-contacts {
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+
+    &__item>a {
+      padding: 20px;
+      width: 100%;
+      border-bottom: 1px solid #0F1113;
+      background: linear-gradient(90deg, #141618 0%, #181A1C 100%);
+      flex: 2 0 100%;
+      font-size: 12px;
+      height: auto;
+      display: block;
+    }
+  }
+
+
+  .b-header__logo,
+  .b-burger {
+    z-index: 200;
+  }
+
+  .b-logo.b-header__logo {
+    transform: translateX(0);
+    position: static;
+  }
+
+  .b-page__header {
+    margin-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .b-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #FFEECC;
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: 9999;
+    position: relative;
+
+    &__line {
+      position: relative;
+      width: 17px;
+      height: 1px;
+      background-color: #fff;
+
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 17px;
+        height: 1px;
+        background-color: #fff;
+        left: 0;
+        transition: all .3s;
+      }
+
+      &::before {
+        bottom: 4px;
+        transform-origin: top;
+      }
+
+      &::after {
+        transform-origin: bottom;
+        top: 4px;
+      }
+    }
+
+    &.b-toggle {
+      .b-burger__line::before {
+        transform: rotate(45deg) translate(2px, 3px);
+      }
+
+      .b-burger__line::after {
+        transform: rotate(-45deg) translate(3px, -3px);
+      }
+
+      .b-burger__line {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@media(max-width:420px) {
+  .b-page__header {
+    margin-bottom: 20px;
+    padding-top: 40px;
+  }
+
+  .b-logo.b-header__logo {
+    max-width: 124px;
+  }
+}
+
+//mobile menu end-------------------------------------------------------------   

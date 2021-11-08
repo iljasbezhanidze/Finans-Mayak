@@ -1,27 +1,73 @@
 <header class="b-header">
 
-  <ul class="b-short-contacts b-header__contacts">
-    <li class="b-short-contacts__item">
-      <a class="b-short-contacts__phone" href="tell:+70980987623">+7 098 098 76 23</a>
-    </li>
-    <li class="b-short-contacts__item">
-      <a class="b-short-contacts__email" href="mailto:sayhi@mayakfinance.com">sayhi@mayakfinance.com</a>
-    </li>
-  </ul>
 
-  <img class="b-logo b-header__logo" src="./img/logo.svg" alt="Логотип компании">
-
-  <nav class="b-header__menu">
-    <ul class="b-menu">
-      <li class="b-menu__item">
-        <a class="b-menu__link b-menu__link_scroll-services" href="#">Услуги</a>
+  <!-- desctop menu -->
+  <div class="b-header__wrapper-desc">
+    <ul class="b-short-contacts b-header__contacts">
+      <li class="b-short-contacts__item">
+        <a class="b-short-contacts__phone" href="tell:+70980987623">+7 098 098 76 23</a>
       </li>
-      <li class="b-menu__item">
-        <a class="b-menu__link b-menu__link_scroll-prices" href="#">Цены</a>
-      </li>
-      <li class="b-menu__item">
-        <a class="b-menu__link b-menu__link_scroll_about-company" href="#">О компании</a>
+      <li class="b-short-contacts__item">
+        <a class="b-short-contacts__email" href="mailto:sayhi@mayakfinance.com">sayhi@mayakfinance.com</a>
       </li>
     </ul>
-  </nav>
+
+    <img class="b-logo b-header__logo b-header__logo_desctop" src="./img/logo.svg" alt="Логотип компании">
+
+    <nav class="b-header__menu">
+      <ul class="b-menu">
+        <li class="b-menu__item">
+          <a class="b-menu__link b-menu__link_scroll-services" href="#">Услуги</a>
+        </li>
+        <li class="b-menu__item">
+          <a class="b-menu__link b-menu__link_scroll-prices" href="#">Цены</a>
+        </li>
+        <li class="b-menu__item">
+          <a class="b-menu__link b-menu__link_scroll_about-company" href="#">О компании</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- mobile menu -->
+  <div class="b-header__wrapper-mob">
+    <div class="b-header__mob-head">
+      <img class="b-logo b-header__logo" src="./img/logo.svg" alt="Логотип компании">
+  
+      <button class="b-burger" type="button" aria-label="кнопка мобильного меню">
+        <span class="b-burger__line"></span>
+      </button>
+    </div>
+
+    <div class="b-header__inner-mob" style="background-image: url('./img/pulse-background-empty.jpg');">
+      <nav class="b-header__menu">
+        <ul class="b-menu">
+          <li class="b-menu__item">
+            <a class="b-menu__link b-menu__link_scroll-services" href="#">Услуги</a>
+          </li>
+          <li class="b-menu__item">
+            <a class="b-menu__link b-menu__link_scroll-prices" href="#">Цены</a>
+          </li>
+          <li class="b-menu__item">
+            <a class="b-menu__link b-menu__link_scroll_about-company" href="#">О компании</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="b-short-contacts b-header__contacts">
+        <li class="b-short-contacts__item">
+          <a class="b-short-contacts__phone" href="tell:+70980987623">+7 098 098 76 23</a>
+        </li>
+        <li class="b-short-contacts__item">
+          <a class="b-short-contacts__email" href="mailto:sayhi@mayakfinance.com">sayhi@mayakfinance.com</a>
+        </li>
+      </ul>
+
+      <button class="b-btn b-btn__menu-mob" type="button" data-modal="#modal1">Оставить заявку
+        <span class="b-btn__arrow">
+      </button>
+    </div>
+  </div>
+
 </header>

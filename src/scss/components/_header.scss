@@ -1,7 +1,11 @@
-.b-header {
+.b-header__wrapper-desc {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.b-header__wrapper-mob {
+  display: none;
 }
 
 .b-short-contacts {
@@ -51,4 +55,8 @@
   &__item:not(:last-child) {
     margin-right: 40px;
   }
+}
+
+.b-burger {
+  display: none;
 }

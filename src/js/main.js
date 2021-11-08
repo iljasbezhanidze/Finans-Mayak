@@ -59,3 +59,19 @@ setTimeout(function () {
 setTimeout(function () {
   document.getElementById('js-success-ring').classList.add('--ring-complete');
 }, animPhaseOne);
+
+
+//burger menu
+const burger = document.querySelector('.b-burger')
+const burgerContent = document.querySelector('.b-header__inner-mob')
+
+burger.addEventListener('click', () => {
+  burgerContent.classList.toggle('b-show');
+  burger.classList.toggle('b-toggle');
+  document.body.classList.toggle('b-fixed');
+});
+
+
+
+
+
