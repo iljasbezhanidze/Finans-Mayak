@@ -1,130 +1,102 @@
 <div class="b-calculator b-calculator_modal-6" style="background-image: url(./../img/pulse-background-empty.jpg);">
-    <div class="b-calculator__wrapper">
-  
-        <div class="b-calculator__head">
-          <div class="b-calculator__title">Калькулятор бухгалтерских услуг</div>
-          <div class="b-calculator__question">
-            Заявка на сопровождение
+  <div class="b-calculator__wrapper">
+
+    <div class="b-calculator__head b-calculator__head_contacts">
+      <div class="b-calculator__head-wrapper">
+        <div class="b-calculator__question">
+          Заявка на сопровождение
+        </div>
+      </div>
+      <div class="b-card b-card_light b-calculator__card-result">
+        <div class="b-title b-title_ultra-small b-title_black">
+          15 000 рублей / месяц
+        </div>
+        <ul class="b-card__result-services">
+          <li class="b-card__result-services-item">ИП на ОСНО (без начисления ЗП и ведения кадрового учета)</li>
+          <li class="b-card__result-services-item">50 комплектов документов)</li>
+          <li class="b-card__result-services-item">10 сотрудников</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="b-calculator__body b-calculator__contacts">
+      <div class="b-contacts__left-col">
+
+        <!-- //desctop block -->
+        <div class="b-only-pc">
+          <div class="b-contacts-links b-contacts__data">
+            <a class="b-contacts-links__tell" href="tel:+70980987623">+7 098 098 76 23</a>
+            <a class="b-contacts-links__email" href="mailto:sayhi@mayakfinance.com">sayhi@mayakfinance.com</a>
+            <address class="b-contacts-links__address">
+              <p>ул. Климашкина, 16</p>
+              <p>ЦАО Пресненский район</p>
+            </address>
           </div>
         </div>
-  
-        <div class="b-calculator__body b-calculator__contacts">
-                <div class="b-contacts__left-col">
-              
-                  <!-- //desctop block -->
-               <div class="b-only-pc">
-                 <div class="b-contacts-links b-contacts__data">
-                   <a class="b-contacts-links__tell" href="tel:+70980987623">+7 098 098 76 23</a>
-                   <a class="b-contacts-links__email" href="mailto:sayhi@mayakfinance.com">sayhi@mayakfinance.com</a>
-                   <address class="b-contacts-links__address">
-                     <p>ул. Климашкина, 16</p>
-                     <p>ЦАО Пресненский район</p>
-                   </address>
-                 </div>
-               </div>
-                 <div class="b-socials b-contacts__socials">
-                   <a class="b-socials__link" href="#">
-                     <img class="b-socials__icon" src="./img/social1.svg" alt="ссылка на инстаграм"></a>
-                   <a class="b-socials__link" href="#">
-                     <img  class="b-socials__icon"src="./img/social2.svg" alt="ссылка на твиттер"></a>
-                   <a class="b-socials__link" href="#">
-                     <img class="b-socials__icon" src="./img/social3.svg" alt="ссылка на фэйсбук">
-                   </a>
-                </div>
-                </div>
-              
-               <form action="" class="b-form  b-contacts__right-col" name="Form question" autocomplete="off">
-                <!--input name-->
-                  <input class="b-input b-form__input b-form__input_name"
-                   placeholder="Имя" 
-                   name="Name"
-                   type="text" 
-                   required
-                   aria-label="поле ввода имени"
-                   aria-required="true">
-              
-               <!--input phone-->
-                 <input class="b-input b-form__input b-form__input_tell"
-                  pattern="^+38\d{3}-\d{3}-\d{2}-\d{2}$"
-                  placeholder="Номер телефона *"
-                  name="Tell"
-                  type="tel"
-                  required
-                  aria-label="поле ввода номера телефона"
-                  aria-required="true">
-                  
-                <!--input email-->
-                  <input class="b-input b-form__input b-form__input_email"
-                  placeholder="Почта"
-                  name="Email"
-                  type='email'
-                  pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
-                  aria-label="поле ввода почты">
-                
-                <!-- compan name -->
-                  <input class="b-input b-form__input b-form__input_tell"
-                  name="Company Name"
-                  placeholder="Название компании"
-                  type="text"
-                  aria-label="Название компании">
-              
-                <!-- message -->
-                  <textarea class="b-input b-form__input b-form__input_textarea"
-                   name="Message"
-                   placeholder="Сообщение..."
-                   ></textarea>
-              
-                <!--submit form-->
-                  <div class="b-submit b-form__submit-wrapper">
-                    <div class="b-submit__chackbox-wrapper">
-                      <input class="b-submit__checkbox"
-                      id="checkbox-main-page"
-                      type="checkbox"
-                      name="agreement"
-                      required
-                      aria-required="true"
-                      aria-label="Пользовтельское соглашение"
-                      > 
-                      <label class="b-submit__label" for="checkbox-main-page">
-                        <span class="b-submit__checkbox-text">Даю согласие на обработку</span>
-                        <a class="b-submit__label-link" href="#">перосональных данных</a>
-                      </label>
-                    </div>
-                    <button class="b-btn b-submit__button" type="submit">
-                       Отправить
-                       <span class="b-btn__arrow">
-                    </button>
-                  </div>
-                </form>
-                
-                <!-- //mobile block -->
-                <div class="b-only-mob">
-                  <div class="b-contacts-links b-contacts__data">
-                    <div class="b-contacts-links__wrapper">
-                      <a class="b-contacts-links__tell" href="tel:+70980987623">+7 098 098 76 23</a>
-                      <a class="b-contacts-links__email" href="mailto:sayhi@mayakfinance.com">sayhi@mayakfinance.com</a>
-                    </div>
-                    <address class="b-contacts-links__address">
-                      <p>ул. Климашкина, 16</p>
-                      <p>ЦАО Пресненский район</p>
-                    </address>
-                  </div>
-                </div>
-              </div>
-  
-  
-      <div class="b-calculator__nav">
-        <div class="b-calculator__btn-wrapper">
-          <button class="b-close-btn b-calculator__close-btn" type="button">
-            <span class="b-close-btn__line"></span>
-            <span class="b-close-btn__line"></span>
-          </button>
-          <span class="b-close-btn__title">Закрыт калькулятор</span>
+      </div>
 
-          <button class="b-return-btn b-calculator__return-btn" type="button"></button>
-          <span class="b-return-btn__title">Вернуться назад</span>
+      <form action="" class="b-form  b-contacts__right-col" name="Form question" autocomplete="off">
+        <!--input name-->
+        <input class="b-input b-form__input b-form__input_name" placeholder="Имя" name="Name" type="text" required
+          aria-label="поле ввода имени" aria-required="true">
+
+        <!--input phone-->
+        <input class="b-input b-form__input b-form__input_tell" pattern="^+38\d{3}-\d{3}-\d{2}-\d{2}$"
+          placeholder="Номер телефона *" name="Tell" type="tel" required aria-label="поле ввода номера телефона"
+          aria-required="true">
+
+        <!--input email-->
+        <input class="b-input b-form__input b-form__input_email" placeholder="Почта" name="Email" type='email'
+          pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' aria-label="поле ввода почты">
+
+        <!-- compan name -->
+        <input class="b-input b-form__input b-form__input_tell" name="Company Name" placeholder="Название компании"
+          type="text" aria-label="Название компании">
+
+        <!--submit form-->
+        <div class="b-submit b-form__submit-wrapper">
+          <div class="b-submit__chackbox-wrapper">
+            <input class="b-submit__checkbox" id="checkbox-main-page" type="checkbox" name="agreement" required
+              aria-required="true" aria-label="Пользовтельское соглашение">
+            <label class="b-submit__label" for="checkbox-main-page">
+              <span class="b-submit__checkbox-text">Даю согласие на обработку</span>
+              <a class="b-submit__label-link" href="#">перосональных данных</a>
+            </label>
+          </div>
+        </div>
+      </form>
+
+      <!-- //mobile block -->
+      <div class="b-only-mob">
+        <div class="b-contacts-links b-contacts__data">
+          <div class="b-contacts-links__wrapper">
+            <a class="b-contacts-links__tell" href="tel:+70980987623">+7 098 098 76 23</a>
+            <a class="b-contacts-links__email" href="mailto:sayhi@mayakfinance.com">sayhi@mayakfinance.com</a>
+          </div>
+          <address class="b-contacts-links__address">
+            <p>ул. Климашкина, 16</p>
+            <p>ЦАО Пресненский район</p>
+          </address>
         </div>
       </div>
     </div>
+
+
+    <div class="b-calculator__nav">
+      <div class="b-calculator__btn-wrapper">
+        <button class="b-close-btn b-calculator__close-btn" type="button">
+          <span class="b-close-btn__line"></span>
+          <span class="b-close-btn__line"></span>
+        </button>
+        <span class="b-close-btn__title">Закрыт калькулятор</span>
+
+        <button class="b-return-btn b-calculator__return-btn" type="button"></button>
+        <span class="b-return-btn__title">Вернуться назад</span>
+      </div>
+      <button class="b-btn b-calculator__btn-result" type="submit">
+        Отправть заяку на сопровождение
+        <span class="b-btn__arrow">
+      </button>
+    </div>
   </div>
-  
+</div>
