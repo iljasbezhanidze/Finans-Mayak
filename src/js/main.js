@@ -71,7 +71,19 @@ burger.addEventListener('click', () => {
   document.body.classList.toggle('b-fixed');
 });
 
+//range slider
+// const rangeSliderForm1 = document.querySelector('.b-calculator__body_range')
+// const rangeSliderTitle1 = document.querySelector('.b-range__title_documents')
+// const rangeSliderInput1 = document.querySelector('.b-range__slider_documents')
+// const rangeValue1 = rangeSliderInput1.value
 
+// let rangeOutput1 = document.createElement("output"); 
+// rangeSliderTitle1.appendChild(rangeOutput1)
+// rangeOutput1.classList.add('b-range__output')
+// rangeOutput1.setAttribute('for', 'select-length')
+// rangeOutput1.setAttribute('name', 'level')
 
-
+// rangeSliderForm1.addEventListener('oninput', function() {
+//   rangeOutput1.innerHTML = rangeValue1
+// })
 

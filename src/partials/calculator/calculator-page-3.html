@@ -1,0 +1,46 @@
+<div class="b-calculator b-calculator_modal-3" style="background-image: url(./../img/pulse-background-empty.jpg);">
+  <div class="b-calculator__wrapper">
+
+    <div class="b-calculator__head">
+      <div class="b-calculator__title">Калькулятор бухгалтерских услуг</div>
+      <div class="b-calculator__question">
+        Выберите объем документов
+      </div>
+    </div>
+
+
+   <div class="b-calculator__body b-calculator__body_range">
+      <form class="b-range b-range_documents" 
+        onsubmit="return false"
+        oninput="level.value = length.valueAsNumber">
+        <div class="b-range__title-wrapper">
+          <label class="b-range__title b-range__title_documents" for="length">
+          <output class="b-range__output" for="select-length" name="level">
+            0
+          </output>
+          Комплектов документов
+        </div>
+      </label>
+        <input class="b-range__slider b-range__slider_documents" id="select-length" value="0" type="range" step="50" max="100" min="0" name="length" list="length-list">
+      </form>
+   </div>
+
+
+    <div class="b-calculator__nav">
+      <div class="b-calculator__btn-wrapper">
+        <button class="b-close-btn b-calculator__close-btn" type="button">
+          <span class="b-close-btn__line"></span>
+          <span class="b-close-btn__line"></span>
+        </button>
+        <span class="b-close-btn__title">Закрыт калькулятор</span>
+
+        <button class="b-return-btn b-calculator__return-btn" type="button"></button>
+        <span class="b-return-btn__title">Вернуться назад</span>
+      </div>
+      <button class="b-btn b-calculator__btn-next" type="submit">
+        Продолжить
+        <span class="b-btn__arrow">
+      </button>
+    </div>
+  </div>
+</div>
