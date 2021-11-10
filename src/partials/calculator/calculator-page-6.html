@@ -1,10 +1,10 @@
 <div class="b-calculator b-calculator_modal-6" style="background-image: url(./../img/pulse-background-empty.jpg);">
-  <div class="b-calculator__wrapper b-calculator__head_contacts">
+  <div class="b-calculator__wrapper">
 
     <div class="b-calculator__head b-calculator__head_contacts">
-      <div class="b-calculator__question">
-Заявка на
-сопровождение
+      
+        <div class="b-calculator__question">Заявка на
+        сопровождение
       </div>
       <div class="b-contacts-links b-contacts__data">
         <a class="b-contacts-links__tell" href="tel:+70980987623">+7 098 098 76 23</a>
@@ -16,10 +16,8 @@
       </div>
     </div>
 
-    <div class="b-calculator__body b-calculator__contacts">
-
-      <div class="b-contacts">
-
+    <div class="b-calculator__body">
+      <div class="b-contacts b-calculator__contacts">
         <form action="" class="b-form  b-contacts__right-col" name="Form question" autocomplete="off">
           <div class="b-card b-card_light b-contacts__card-result">
             <div class="b-title b-title_ultra-small b-title_black">
@@ -34,7 +32,7 @@
 
           <!--input name-->
           <input class="b-input b-form__input b-form__input_name" placeholder="Имя" name="Name" type="text" required
-            aria-label="поле ввода имени" aria-required="true" >
+            aria-label="поле ввода имени" aria-required="true">
 
           <!--input phone-->
           <input class="b-input b-form__input b-form__input_tell" pattern="^+38\d{3}-\d{3}-\d{2}-\d{2}$"
@@ -63,23 +61,24 @@
         </form>
       </div>
     </div>
-  </div>
 
-  <div class="b-calculator__nav">
-    <div class="b-calculator__btn-wrapper">
-      <button class="b-close-btn b-calculator__close-btn" type="button">
-        <span class="b-close-btn__line"></span>
-        <span class="b-close-btn__line"></span>
+
+    <div class="b-calculator__nav">
+      <div class="b-calculator__btn-wrapper">
+        <button class="b-close-btn b-calculator__close-btn" type="button">
+          <span class="b-close-btn__line"></span>
+          <span class="b-close-btn__line"></span>
+        </button>
+        <span class="b-close-btn__title">Закрыт калькулятор</span>
+
+        <button class="b-return-btn b-calculator__return-btn" type="button"></button>
+        <span class="b-return-btn__title">Вернуться назад</span>
+      </div>
+      <button class="b-btn b-calculator__btn-result" type="submit">
+        Отправть заяку на сопровождение
+        <span class="b-btn__arrow">
       </button>
-      <span class="b-close-btn__title">Закрыт калькулятор</span>
-
-      <button class="b-return-btn b-calculator__return-btn" type="button"></button>
-      <span class="b-return-btn__title">Вернуться назад</span>
     </div>
-    <button class="b-btn b-calculator__btn-result" type="submit">
-      Отправть заяку на сопровождение
-      <span class="b-btn__arrow">
-    </button>
   </div>
 </div>
 </div>
