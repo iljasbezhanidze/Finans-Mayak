@@ -819,16 +819,8 @@
 
 
 //mobile menu start-------------------------------------------------------------
-@media(max-width:860px) {
 
-  .b-fixed {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
+@media(max-width:860px) {
 
   .b-logo.b-header__logo {
     max-width: 124px;

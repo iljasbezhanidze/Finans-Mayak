@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
 //animate icon for succes submit
 var animPhaseOne = 2000;
 var animPhaseTwo = animPhaseOne + 750;
@@ -61,6 +62,7 @@ setTimeout(function () {
 }, animPhaseOne);
 
 
+
 //burger menu
 const burger = document.querySelector('.b-burger')
 const burgerContent = document.querySelector('.b-header__inner-mob')
@@ -71,19 +73,67 @@ burger.addEventListener('click', () => {
   document.body.classList.toggle('b-fixed');
 });
 
-//range slider
-// const rangeSliderForm1 = document.querySelector('.b-calculator__body_range')
-// const rangeSliderTitle1 = document.querySelector('.b-range__title_documents')
-// const rangeSliderInput1 = document.querySelector('.b-range__slider_documents')
-// const rangeValue1 = rangeSliderInput1.value
 
-// let rangeOutput1 = document.createElement("output"); 
-// rangeSliderTitle1.appendChild(rangeOutput1)
-// rangeOutput1.classList.add('b-range__output')
-// rangeOutput1.setAttribute('for', 'select-length')
-// rangeOutput1.setAttribute('name', 'level')
 
-// rangeSliderForm1.addEventListener('oninput', function() {
-//   rangeOutput1.innerHTML = rangeValue1
-// })
+//QUIZ CALCULATOR--------------------------------------------------------------------------------
+const calculatorWindows = document.querySelectorAll('.b-calculator')
+const calculatorBtn = document.querySelectorAll('[data-calculator]')
+const btnsNext = document.querySelectorAll('.b-calculator__btn-next')
+const btnsPrev = document.querySelectorAll('.b-calculator__return-btn')
+const btnsClose = document.querySelectorAll('.b-calculator__close-btn')
+
+let arrWindows = []
+let indexWindow = 0
+
+// crete arroy with all windows of calculator
+document.addEventListener('DOMContentLoaded', () => {
+  function pushWindows() {
+    for (let firstWindow = 0; firstWindow < calculatorWindows.length - 1; firstWindow++) {
+      arrWindows.push(calculatorWindows[firstWindow])
+    }
+  }
+  pushWindows()
+})
+
+// open calculator
+for (let thisBtn of calculatorBtn) {
+  thisBtn.addEventListener('click', openFirstWindow)
+}
+
+function openFirstWindow() {
+  arrWindows[indexWindow].classList.add('b-show-calc')
+  document.body.classList.add('b-fixed');
+}
+
+//close calculator
+for (let thisBtn of btnsClose) {
+  thisBtn.addEventListener('click', closeCalc)
+}
+
+function closeCalc() {
+  for (let index of arrWindows) {
+    index.classList.remove('b-show-calc')
+    document.body.classList.remove('b-fixed');
+  }
+}
+
+//button next
+for (let currentBtnNext of btnsNext) {
+  currentBtnNext.addEventListener('click', function () {
+    calculatorWindows[indexWindow].classList.remove('b-show-calc')
+    indexWindow++
+    calculatorWindows[indexWindow].classList.add('b-show-calc')
+  })
+}
+
+//button prev
+for (let currentBtnPrev of btnsPrev) {
+  currentBtnPrev.addEventListener('click', function () {
+    calculatorWindows[indexWindow].classList.remove('b-show-calc')
+    indexWindow--
+    calculatorWindows[indexWindow].classList.add('b-show-calc')
+  })
+}
+
+
 
