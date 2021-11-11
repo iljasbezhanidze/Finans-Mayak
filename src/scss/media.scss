@@ -278,20 +278,23 @@
   .b-personal-date__title_mob {
     display: flex;
   }
+
   .b-personal-date__btn-wrapper_mob {
     margin-top: 40px;
   }
 }
 
-@media(max-width:552px){
+@media(max-width:552px) {
   .b-personal-date__btn-title {
     font-size: 16px;
   }
 }
-@media(max-width:444px){
+
+@media(max-width:444px) {
   .b-personal-date__btn-title {
     display: none;
   }
+
   .b-personal-date__btn-wrapper_mob {
     justify-content: space-between;
   }
@@ -1562,5 +1565,20 @@
   .b-modal__submit-wrapper {
     margin-bottom: 29px;
     margin-top: 20px;
+  }
+}
+
+@media(max-width:620px) {
+  .b-submit__label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .b-submit__label::before {
+    left: 0;
+    top: 6px;
+  }
+  .b-submit__label::after {
+    top: 9px;
   }
 }

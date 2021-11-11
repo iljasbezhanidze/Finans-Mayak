@@ -216,7 +216,9 @@ cite {
   }
 }
 
-.b-show-modal,
+.b-show-modal{
+  display: flex !important;
+}
 .b-show-calc {
   display: block !important;
 }

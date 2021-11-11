@@ -74,18 +74,25 @@ burger.addEventListener('click', () => {
 });
 
 
+//modals
+let modalBtns = document.querySelectorAll('[data-modal]')
+let modal = document.querySelectorAll('.b-modal')
+let modalClose = document.querySelectorAll('.b-modal__close')
 
-// let modalBtns = document.querySelectorAll('[data-modal]')
-// let modal = document.querySelectorAll('.b-modal')
-
-// for (let i = 0; i < modalBtns.length; i++) {
-//   modalBtns[i].addEventListener('click', function() {
-//     if(this.dataset.modal == modal[i].id) {
-//       modal[i].classList.add('b-show-modal')
-//       console.log(this)
-//     }
-//   })
-// }
+for (let i = 0; i < modalBtns.length; i++) {
+  modalBtns[i].addEventListener('click', function() {
+    for(let n = 0; n < modal.length; n++) {
+      if(this.dataset.modal == modal[n].id) {
+        modal[n].classList.add('b-show-modal')
+      } else {
+        modal[n].classList.remove('b-show-modal')
+      }
+      modalClose[n].addEventListener('click', () => {
+        modal[n].classList.remove('b-show-modal')
+      })
+    }
+  })
+}
 
 
 
