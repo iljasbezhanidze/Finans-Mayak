@@ -25,6 +25,13 @@
   display: flex;
   align-items: center;
   margin-bottom: 378px;
+  height: 40px;
+
+  @media(max-width:1193px){
+      & {
+        height: unset;
+      }
+  }
   
   &-item {
     height: 48px;

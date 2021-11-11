@@ -75,6 +75,20 @@ burger.addEventListener('click', () => {
 
 
 
+// let modalBtns = document.querySelectorAll('[data-modal]')
+// let modal = document.querySelectorAll('.b-modal')
+
+// for (let i = 0; i < modalBtns.length; i++) {
+//   modalBtns[i].addEventListener('click', function() {
+//     if(this.dataset.modal == modal[i].id) {
+//       modal[i].classList.add('b-show-modal')
+//       console.log(this)
+//     }
+//   })
+// }
+
+
+
 //QUIZ CALCULATOR--------------------------------------------------------------------------------
 const calculatorWindows = document.querySelectorAll('.b-calculator')
 const calculatorBtn = document.querySelectorAll('[data-calculator]')
@@ -115,6 +129,7 @@ function closeCalc() {
     index.classList.remove('b-show-calc')
     document.body.classList.remove('b-fixed');
   }
+  indexWindow = 0
 }
 
 //button next
