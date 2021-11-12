@@ -15,33 +15,48 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-//anchor smooth scroll
-document.addEventListener("DOMContentLoaded", () => {
+// anchor smooth scroll
+// document.addEventListener("DOMContentLoaded", () => {
 
-  function scrollTo(elem, correction = 0) {
-    window.scroll({
-      left: 0,
-      top: elem.offsetTop - correction,
-      behavior: 'smooth'
-    });
-  };
+//   function scrollTo(elem, correction = 0) {
+//     window.scroll({
+//       left: 0,
+//       top: elem.offsetTop - correction,
+//       behavior: 'smooth'
+//     });
+//   };
 
-  const scrollBtnServices = document.querySelector('.b-menu__link_scroll-services'),
-    scrollbtnPrices = document.querySelector('.b-menu__link_scroll-prices'),
-    scrollBtnCompany = document.querySelector('.b-menu__link_scroll_about-company')
+//   const scrollBtnServices = document.querySelector('.b-menu__link_scroll-services'),
+//         scrollBtnPrices = document.querySelector('.b-menu__link_scroll-prices'),
+//         scrollBtnCompany = document.querySelector('.b-menu__link_scroll_about-company')
 
-  scrollBtnServices.addEventListener('click', () => {
-    scrollTo(document.querySelector('.b-services'), 50)
-  })
+//   scrollBtnServices.addEventListener('click', () => {
+//     scrollTo(document.querySelector('.b-services'), 50)
+//   });
 
-  scrollbtnPrices.addEventListener('click', () => {
-    scrollTo(document.querySelector('.b-stack__card'), 100)
-  })
+//   scrollBtnCompany.addEventListener('click', () => {
+//     scrollTo(document.querySelector('.b-benefits'), 50)
+//   });
+//   scrollBtnPrices.addEventListener('click', () => {
+//     scrollTo(document.querySelector('.b-stack__card'), 100)
+//   });
+// });
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault()
+      let href = this.getAttribute('href').substring(1)
+      const scrollTarget = document.getElementById(href);
+        const topOffset = 50
+        // const topOffset = 0; // если не нужен отступ сверху 
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - topOffset;
 
-  scrollBtnCompany.addEventListener('click', () => {
-    scrollTo(document.querySelector('.b-benefits'), 50)
-  })
-});
+        window.scrollBy({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    })
+})
 
 
 
@@ -80,9 +95,9 @@ let modal = document.querySelectorAll('.b-modal')
 let modalClose = document.querySelectorAll('.b-modal__close')
 
 for (let i = 0; i < modalBtns.length; i++) {
-  modalBtns[i].addEventListener('click', function() {
-    for(let n = 0; n < modal.length; n++) {
-      if(this.dataset.modal == modal[n].id) {
+  modalBtns[i].addEventListener('click', function () {
+    for (let n = 0; n < modal.length; n++) {
+      if (this.dataset.modal == modal[n].id) {
         modal[n].classList.add('b-show-modal')
       } else {
         modal[n].classList.remove('b-show-modal')
@@ -156,6 +171,3 @@ for (let currentBtnPrev of btnsPrev) {
     calculatorWindows[indexWindow].classList.add('b-show-calc')
   })
 }
-
-
-
