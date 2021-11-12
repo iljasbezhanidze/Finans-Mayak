@@ -126,7 +126,7 @@ let indexWindow = 0
 // crete arroy with all windows of calculator
 document.addEventListener('DOMContentLoaded', () => {
   function pushWindows() {
-    for (let firstWindow = 0; firstWindow < calculatorWindows.length - 1; firstWindow++) {
+    for (let firstWindow = 0; firstWindow <= calculatorWindows.length; firstWindow++) {
       arrWindows.push(calculatorWindows[firstWindow])
     }
   }
@@ -139,6 +139,7 @@ for (let thisBtn of calculatorBtn) {
 }
 
 function openFirstWindow() {
+  indexWindow = 0
   arrWindows[indexWindow].classList.add('b-show-calc')
   document.body.classList.add('b-fixed');
 }
@@ -173,3 +174,4 @@ for (let currentBtnPrev of btnsPrev) {
     calculatorWindows[indexWindow].classList.add('b-show-calc')
   })
 }
+

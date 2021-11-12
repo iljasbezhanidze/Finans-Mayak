@@ -68,7 +68,7 @@
     align-items: center;
   }
 
-  &__close-btn {
+  &__close-btn:not(.b-calculator__btn-result) {
     margin-right: 20px;
     height: 60px;
     width: 60px;
@@ -230,7 +230,7 @@
 }
 
 .b-calculator__btn-result {
-  max-width: 490px;
+  max-width: 490px !important;
 }
 
 .b-calculator_modal-6 .b-input:not(.b-form__input_textarea) {
