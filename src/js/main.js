@@ -70,18 +70,43 @@ burger.addEventListener('click', () => {
 let modalBtns = document.querySelectorAll('[data-modal]')
 let modal = document.querySelectorAll('.b-modal')
 let modalClose = document.querySelectorAll('.b-modal__close')
+let modalReturn = document.querySelector('.b-return-submit')
+let modalWrapper = document.querySelector('.b-modal__wrapper')
+let currentModal
 
 for (let i = 0; i < modalBtns.length; i++) {
   modalBtns[i].addEventListener('click', function () {
     for (let n = 0; n < modal.length; n++) {
       if (this.dataset.modal == modal[n].id) {
-        modal[n].classList.add('b-show-modal')
+        currentModal = modal[n]
+        openModal()
       } else {
         modal[n].classList.remove('b-show-modal')
       }
-      modalClose[n].addEventListener('click', () => {
-        modal[n].classList.remove('b-show-modal')
+      modalClose[n].addEventListener('click', closeModal)
+      modalReturn.addEventListener('click', () => {
+        closeModal()
+        modal[0].classList.add('b-show-modal');
       })
+      window.addEventListener('click', missClickClose)
+
+      function missClickClose(e) {
+        if (e.target == currentModal && e.target != modalWrapper) {
+          console.log(e.target)
+          closeModal()
+          window.removeEventListener('click', missClickClose)
+        }
+      }
+
+      function openModal() {
+        currentModal.classList.add('b-show-modal');
+        document.body.classList.add('b-fixed');
+      }
+
+      function closeModal() {
+        document.body.classList.remove('b-fixed');
+        modal[n].classList.remove('b-show-modal')
+      }
     }
   })
 }

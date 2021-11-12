@@ -11,6 +11,7 @@
             <form class="b-form" autocomplete="off">
                 <input class="b-input b-modal__input b-modal__input_name"
                 placeholder="Имя" 
+                minlength="2"
                 name="Name"
                 type="text" 
                 required
@@ -20,8 +21,9 @@
                 <input class="b-input b-modal__input b-modal__input_tell"
                 pattern="^+38\d{3}-\d{3}-\d{2}-\d{2}$"
                 placeholder="Номер телефона *"
+                min="7"
                 name="Tell"
-                type="tel"
+                type="number"
                 required
                 aria-label="поле ввода номера телефона"
                 aria-required="true">
