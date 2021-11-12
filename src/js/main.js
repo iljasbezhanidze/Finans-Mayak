@@ -16,46 +16,23 @@ var swiper = new Swiper(".mySwiper", {
 
 
 // anchor smooth scroll
-// document.addEventListener("DOMContentLoaded", () => {
-
-//   function scrollTo(elem, correction = 0) {
-//     window.scroll({
-//       left: 0,
-//       top: elem.offsetTop - correction,
-//       behavior: 'smooth'
-//     });
-//   };
-
-//   const scrollBtnServices = document.querySelector('.b-menu__link_scroll-services'),
-//         scrollBtnPrices = document.querySelector('.b-menu__link_scroll-prices'),
-//         scrollBtnCompany = document.querySelector('.b-menu__link_scroll_about-company')
-
-//   scrollBtnServices.addEventListener('click', () => {
-//     scrollTo(document.querySelector('.b-services'), 50)
-//   });
-
-//   scrollBtnCompany.addEventListener('click', () => {
-//     scrollTo(document.querySelector('.b-benefits'), 50)
-//   });
-//   scrollBtnPrices.addEventListener('click', () => {
-//     scrollTo(document.querySelector('.b-stack__card'), 100)
-//   });
-// });
 document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault()
-      let href = this.getAttribute('href').substring(1)
-      const scrollTarget = document.getElementById(href);
-        const topOffset = 50
-        // const topOffset = 0; // если не нужен отступ сверху 
-        const elementPosition = scrollTarget.getBoundingClientRect().top;
-        const offsetPosition = elementPosition - topOffset;
+  link.addEventListener('click', function (e) {
+    e.preventDefault()
+    document.body.classList.remove('b-fixed');
+    burgerContent.classList.remove('b-show');
+    burger.classList.toggle('b-toggle');
+    let href = this.getAttribute('href').substring(1)
+    const scrollTarget = document.getElementById(href);
+    const topOffset = 50
+    const elementPosition = scrollTarget.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - topOffset;
 
-        window.scrollBy({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
-    })
+    window.scrollBy({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  })
 })
 
 
