@@ -82,6 +82,12 @@
 .b-return-btn__title,
 .b-close-btn__title {
   white-space: nowrap;
+  cursor: pointer;
+  transition: color .2s;
+
+  &:hover {
+    color: #FFEECC;
+  }
 }
 
 .b-return-btn,

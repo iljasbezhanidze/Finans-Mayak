@@ -92,7 +92,6 @@ for (let i = 0; i < modalBtns.length; i++) {
 
       function missClickClose(e) {
         if (e.target == currentModal && e.target != modalWrapper) {
-          console.log(e.target)
           closeModal()
           window.removeEventListener('click', missClickClose)
         }
@@ -117,8 +116,8 @@ for (let i = 0; i < modalBtns.length; i++) {
 const calculatorWindows = document.querySelectorAll('.b-calculator')
 const calculatorBtn = document.querySelectorAll('[data-calculator]')
 const btnsNext = document.querySelectorAll('.b-calculator__btn-next')
-const btnsPrev = document.querySelectorAll('.b-calculator__return-btn')
-const btnsClose = document.querySelectorAll('.b-calculator__close-btn')
+const btnsPrev = document.querySelectorAll('.b-calculator__return-btn, .b-return-btn__title')
+const btnsClose = document.querySelectorAll('.b-calculator__close-btn, .b-close-btn__title')
 
 let arrWindows = []
 let indexWindow = 0
@@ -174,4 +173,3 @@ for (let currentBtnPrev of btnsPrev) {
     calculatorWindows[indexWindow].classList.add('b-show-calc')
   })
 }
-

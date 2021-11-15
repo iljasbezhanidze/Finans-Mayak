@@ -1,5 +1,4 @@
 body {
-  background-color: #0F1113;
   color: #D0D1D1;
   font-family: 'Manrope', sans-serif;
   font-size: 20px;
@@ -7,10 +6,16 @@ body {
   line-height: 1.6;
   color: #fff;
   letter-spacing: 0.02em;
+    
 }
 
 cite {
   font-style: normal;
+}
+
+.b-animation {
+  opacity: 0;
+  transform: scale3d(1);
 }
 
 .b-only-mob {
@@ -21,13 +26,14 @@ cite {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
+  width: calc(100% - 17px);
   height: 100vh;
   overflow: hidden;
 }
 
 //POSITIONS AND SIZES
 .b-page {
+  
   &__header {
     padding-left: 25px;
     padding-right: 25px;
@@ -44,6 +50,7 @@ cite {
 
   &_main {
     overflow-x: hidden;
+    background-color: #0F1113;
   }
 
   &__main-window {
