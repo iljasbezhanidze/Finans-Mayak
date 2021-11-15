@@ -11,6 +11,7 @@
     justify-content: center;
     text-align: center;
     width: 100%;
+    z-index: 2;
   }
 }
 
@@ -26,6 +27,11 @@
   align-items: center;
   margin-bottom: 378px;
   height: 40px;
+  z-index: 2;
+
+  &-item {
+    white-space: nowrap;
+  }
 
   @media(max-width:1193px){
       & {

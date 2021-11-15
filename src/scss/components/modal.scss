@@ -9,6 +9,7 @@
   justify-content: center;
   background-color: transparent;
   z-index: 99999;
+  transition: all .3s;
 
   &__wrapper {
     display: flex;

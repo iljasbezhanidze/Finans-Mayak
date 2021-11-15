@@ -77,9 +77,13 @@ let currentModal
 for (let i = 0; i < modalBtns.length; i++) {
   modalBtns[i].addEventListener('click', function () {
     for (let n = 0; n < modal.length; n++) {
+      modal[n].style.opacity = "0"
       if (this.dataset.modal == modal[n].id) {
         currentModal = modal[n]
         openModal()
+        setTimeout(function () {
+          modal[n].style.opacity = "1"
+        }, 100)
       } else {
         modal[n].classList.remove('b-show-modal')
       }
@@ -138,9 +142,13 @@ for (let thisBtn of calculatorBtn) {
 }
 
 function openFirstWindow() {
+  arrWindows[indexWindow].style.opacity = "0"
   indexWindow = 0
   arrWindows[indexWindow].classList.add('b-show-calc')
   document.body.classList.add('b-fixed');
+  setTimeout(function () {
+    arrWindows[indexWindow].style.opacity = "1"
+  }, 100)
 }
 
 //close calculator
