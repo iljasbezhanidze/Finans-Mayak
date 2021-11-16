@@ -165,12 +165,15 @@ function closeCalc() {
 }
 
 //button next
-for (let currentBtnNext of btnsNext) {
-  currentBtnNext.addEventListener('click', function () {
-    calculatorWindows[indexWindow].classList.remove('b-show-calc')
-    indexWindow++
-    calculatorWindows[indexWindow].classList.add('b-show-calc')
-  })
+function nextBtnCalc() {
+  for (let currentBtnNext = 0; currentBtnNext <  btnsNext.length; currentBtnNext++) {
+    btnsNext[currentBtnNext].removeAttribute('disabled')
+    btnsNext[currentBtnNext].addEventListener('click', function () {
+      calculatorWindows[indexWindow].classList.remove('b-show-calc')
+      indexWindow++
+      calculatorWindows[indexWindow].classList.add('b-show-calc')
+    })
+  }
 }
 
 //button prev
@@ -181,3 +184,26 @@ for (let currentBtnPrev of btnsPrev) {
     calculatorWindows[indexWindow].classList.add('b-show-calc')
   })
 }
+
+//validate
+let parent = document.querySelectorAll('.b-calculator__body')
+let radio = clickAnswer(parent[indexWindow].querySelectorAll('.b-calculator-card__check'))
+let range = changeRange(parent[indexWindow].querySelectorAll('.b-range__slider'))
+
+
+function clickAnswer(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i].addEventListener('click', () => {
+      nextBtnCalc()
+    })
+  }
+}
+
+function changeRange(elem) {
+  if (elem.value > 0) {
+    nextBtnCalc()
+  }
+}
+
+
+// const parentCalc[indexWindow].querySelector('.b-calculator__body')
