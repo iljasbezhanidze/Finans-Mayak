@@ -14,14 +14,13 @@
                 minlength="2"
                 name="Name"
                 type="text" 
-                required
                 aria-label="поле ввода имени"
                 aria-required="true">
     
                 <input class="b-input b-modal__input b-modal__input_tell"
                 pattern="^+38\d{3}-\d{3}-\d{2}-\d{2}$"
                 placeholder="Номер телефона *"
-                min="7"
+                min="4"
                 name="Tell"
                 type="number"
                 required
@@ -44,7 +43,7 @@
                     </label>
                   </div>
                </div>
-               <button class="b-btn b-modal__button" type="submit" data-modal="modal2">
+               <button class="b-btn b-modal__button b-btn_submit" type="submit" >
                  Отправить
                  <span class="b-btn__arrow"></span>
                </button>
