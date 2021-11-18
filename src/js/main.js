@@ -72,15 +72,13 @@ let modal = document.querySelectorAll('.b-modal')
 let modalClose = document.querySelectorAll('.b-modal__close')
 let modalReturn = document.querySelector('.b-return-submit')
 let modalWrapper = document.querySelector('.b-modal__wrapper')
-let submit = document.querySelector('.b-btn_submit')
 let succes = document.querySelector('.b-modal_call-back-succes')
 let currentModal
 
 for (let i = 0; i < modalBtns.length; i++) {
   modalBtns[i].addEventListener('click', function () {
     for (let n = 0; n < modal.length; n++) {
-      let thisModalForm = modal[n].querySelector('.b-form')
-      console.log(thisModalForm)
+
       modal[n].style.opacity = "0"
       if (this.dataset.modal == modal[n].id) {
         currentModal = modal[n]
@@ -96,7 +94,7 @@ for (let i = 0; i < modalBtns.length; i++) {
         closeModal()
         modal[0].classList.add('b-show-modal');
       })
-      
+
       window.addEventListener('click', missClickClose)
 
       function missClickClose(e) {
@@ -115,10 +113,31 @@ for (let i = 0; i < modalBtns.length; i++) {
         document.body.classList.remove('b-fixed');
         modal[n].classList.remove('b-show-modal')
       }
+
+      // validate
+      let submit = document.querySelector('.b-btn_submit') //кнопка отправки
+      let thisModalForm = modal[n].querySelector('.b-form') //форма
+      let thisoModalInput = modal[n].querySelector('.b-modal__input_tell') //инпут
+      let thisModalCheckbox = modal[n].querySelector('.b-submit__checkbox') //чекбокс
+      let checkboxValid = false
+      let inputValid = false
+
+      thisModalForm.addEventListener('change', function() {
+        checkboxValid == true  && inputValid == true  ? submit.disabled = "false" : submit.disabled = "true"
+        console.log(checkboxValid == inputValid)
+      })
+
+      thisoModalInput.onchange = function() {
+        this.value.length > 10 && this.value.length < 14 ? inputValid = true : inputValid = false
+      }
+
+      thisModalCheckbox.onclick = function () {
+        this.checked ? checkboxValid = true : checkboxValid = false
+      }
+
     }
   })
 }
-
 
 
 //QUIZ CALCULATOR--------------------------------------------------------------------------------
@@ -171,7 +190,7 @@ function closeCalc() {
 
 //button next
 function nextBtnCalc() {
-  for (let currentBtnNext = 0; currentBtnNext <  btnsNext.length; currentBtnNext++) {
+  for (let currentBtnNext = 0; currentBtnNext < btnsNext.length; currentBtnNext++) {
     btnsNext[currentBtnNext].removeAttribute('disabled')
     btnsNext[currentBtnNext].addEventListener('click', function () {
       calculatorWindows[indexWindow].classList.remove('b-show-calc')
@@ -209,6 +228,3 @@ for (let currentBtnPrev of btnsPrev) {
 //     nextBtnCalc()
 //   }
 // }
-
-
-// const parentCalc[indexWindow].querySelector('.b-calculator__body')
