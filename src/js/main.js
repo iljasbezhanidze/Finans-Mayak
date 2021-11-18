@@ -125,16 +125,20 @@ for (let i = 0; i < modalBtns.length; i++) {
       thisModalForm.addEventListener('change', function() {
         checkboxValid == true  && inputValid == true  ? submit.disabled = "false" : submit.disabled = "true"
         console.log(checkboxValid == inputValid)
+
+        submit.addEventListener('click', function() {
+          closeModal()
+          succes.classList.add('b-show-modal')
+        })
       })
 
       thisoModalInput.onchange = function() {
-        this.value.length > 10 && this.value.length < 14 ? inputValid = true : inputValid = false
+        this.value.length > 10 && this.value.length < 14 ? inputValid = 'true' : inputValid = 'false'
       }
 
       thisModalCheckbox.onclick = function () {
-        this.checked ? checkboxValid = true : checkboxValid = false
+        this.checked ? checkboxValid = 'true' : checkboxValid = 'false'
       }
-
     }
   })
 }
